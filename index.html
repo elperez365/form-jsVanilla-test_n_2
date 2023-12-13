@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="/styles.css" />
+	</head>
+	<body>
+		<h1>Good Vibes Form</h1>
+		<section>
+			<h2>Tell us something positive that happened to you today</h2>
+
+			<form
+				id="form"
+				action="">
+				<div class="input">
+					<label for="name">Name</label>
+					<input
+						type="text"
+						name="name"
+						id="name"
+						placeholder="Enter your name" />
+				</div>
+				<div class="input">
+					<label for="email">Email</label>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Enter your email address" />
+				</div>
+				<div class="input">
+					<label for="howGood">On scale of 1-10, how good was it?</label>
+					<input
+						type="number"
+						name="howGood"
+						id="howGood"
+						min="1"
+						max="10"
+						placeholder="Enter a number between 1 and 10" />
+				</div>
+				<div class="input">
+					<label for="happen">Where did it happen?</label>
+					<select
+						name="happen"
+						id="happen">
+						<option value="home">Home</option>
+						<option value="work">Work</option>
+						<option value="school">School</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				<div>
+					<label for="day">At what of day it happen?</label>
+					<input
+						type="radio"
+						name="day"
+						id="morning"
+						value="morning" />
+					<label for="morning">Morning</label>
+					<input
+						type="radio"
+						name="day"
+						id="afternoon"
+						value="afternoon" />
+					<label for="morning">Afternoon</label>
+					<input
+						type="radio"
+						name="day"
+						id="evening"
+						value="evening" />
+					<label for="morning">Evening</label>
+				</div>
+				<div class="input">
+					<label for="emotions"
+						>What emotions did you experience? (Select all that apply)</label
+					>
+					<div class="checkboxes">
+						<div>
+							<input
+								type="checkbox"
+								name="emotions"
+								value="excited" />
+							<label for="happy">Excited</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								name="emotions"
+								value="humbled" />
+							<label for="excited">Humbled</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								name="emotions"
+								value="elated" />
+							<label for="relieved">Elated</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								name="emotions"
+								value="loved" />
+							<label for="grateful">Loved</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								name="emotions"
+								value="enthusiastic" />
+							<label for="other">Enthusiastic</label>
+						</div>
+					</div>
+				</div>
+				<div class="input">
+					<label for="experience"
+						>Please describe your positive experience</label
+					>
+					<textarea
+						name="experience"
+						id="experience"></textarea>
+				</div>
+				<div
+					class="input"
+					id="rangeContainer">
+					<label for="range">Select a range</label>
+					<div>
+						<input
+							type="range"
+							name="range"
+							id="range"
+							min="1"
+							max="10"
+							step="1" />
+						<span id="rangeValue"></span>
+					</div>
+				</div>
+				<div class="input">
+					<label for="date">Select a date</label>
+					<div>
+						<input
+							type="date"
+							name="date"
+							id="date" />
+						<span id="dateValue"></span>
+					</div>
+				</div>
+				<div class="input">
+					<label for="color">Select a color</label>
+					<div>
+						<input
+							type="color"
+							name="color"
+							id="color" />
+						<span id="colorValue"></span>
+					</div>
+				</div>
+				<div class="buttons">
+					<input
+						id="submitButton"
+						type="submit"
+						value="Submit" />
+					<input
+						type="reset"
+						value="Reset" />
+				</div>
+			</form>
+		</section>
+	</body>
+	<script src="/script.js"></script>
+</html>
